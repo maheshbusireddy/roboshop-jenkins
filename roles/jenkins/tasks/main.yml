@@ -5,7 +5,7 @@
 
 - name: Create a jenkins job
   community.general.jenkins_job:
-    config: "{{ look up('flie', '/tmp/job.xml') }}"
+    config: "{{ lookup ('file', '/tmp/job.xml') }}"
     name: test
     url: http://172.31.83.253:8080
     user: admin
