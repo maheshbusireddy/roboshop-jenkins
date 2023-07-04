@@ -1,10 +1,10 @@
-- name : create Config File
-  ansible.builtin.tempalte :
+- name: create Config File
+  ansible.builtin.tempalte:
     src: job.xml
     dest: /temp/job.xml
 
-- name : Create a jenkins job
-  community.general.jenkins_job :
+- name: Create a jenkins job
+  community.general.jenkins_job:
     config: "{{ lookup ('flie', '/temp/job.xml') }}"
     name: test
     url: http://172.31.83.253:8080
