@@ -13,4 +13,4 @@
   loop:
     - frontend
     - catalogue
-    - cart     
+    - cart   
