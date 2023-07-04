@@ -1,5 +1,5 @@
 - name: create Config File
-  ansible.builtin.tempalte:
+  ansible.builtin.template:
     src: job.xml
     dest: /temp/job.xml
 
